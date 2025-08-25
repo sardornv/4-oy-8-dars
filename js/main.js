@@ -20,11 +20,14 @@ elHands.forEach((el) => {
             elAi.src = `images/${ai}.svg`;
             if(winner === "YOU WIN"){
                 sum++
-                elCountText.textContent = sum 
+                elCountText.textContent = sum;
+                 
             } else if(winner === "YOU LOSE" && sum > 0){
                 sum--
                 elCountText.textContent = sum
             }
+            elRefreshGameButton.classList.remove("hidden")
+            elStatusText.classList.remove("hidden")
         }, 1000)
     })
 })
@@ -32,6 +35,8 @@ elHands.forEach((el) => {
 elRefreshGameButton.addEventListener("click", () => {
     switchZone(false);
     elAi.src = `images/Oval.svg`;
+    elRefreshGameButton.classList.add("hidden")
+    elStatusText.classList.add("hidden")
 })
 
 elModeChanger.addEventListener("click", () => {

@@ -8,7 +8,7 @@
 </head>
 <body class="bg-[radial-gradient(134.34%_134.34%_at_50%_0%,_#1F3757_0%,_#131537_100%)] h-full">
     <!-- Count Zone  -->
-     <section class="flex justify-center translate-y-[48px]">
+     <section class="flex justify-center translate-y-[48px]" id="countZone">
          <div class="flex justify-between w-[700px] h-[150px] rounded-[15px] border-2 text-gray-500 px-[35px] py-[20px]">
             <img id="logo" src="./images/tipa-logo.svg" alt="tipa-logo">
             <div class="flex place-items-center flex-col w-[115px] h-[100px] rounded-[8px] border-2 bg-white pt-[15px]">
@@ -29,26 +29,37 @@
      </section>
      <!-- Status Zone  -->
      <section id="StatusZone" class="hidden py-[100px]">
-        <div class="flex">
+        <div class="flex justify-center py-[50px] gap-10 place-items-center">
             <!-- Player -->
-            <img class="player" src="" alt="">
-            <button id="refreshGameButton" class="btn btn-info">Refresh Game</button>
-            <p class="" id="statusText"></p>
+            <span class="flex gap-10 flex-col">
+                <p class="translate-x-[30px] text-2xl font-semibold tracking-widest">YOU PICKED</p>
+                <img width="220px" height="220px" class="player" src="" alt="">
+            </span>
+            <div class="flex flex-col place-items-center gap-4">
+            <p class="text-4xl font-bold hidden" id="statusText"></p>
+            <button id="refreshGameButton" class="btn btn-info text-gray-500 bg-white shadow-none border-white w-[200px] rounded-[8px] hidden ">PLAY AGAIN</button>
+            </div>
             <!-- Ai -->
-            <img class="ai" src="./images/Oval.svg" alt="oval">
+            <span class="flex gap-10 flex-col">
+                <p class="text-2xl font-semibold tracking-widest">THE HOUSE PICKED</p>
+                <img width="220px" height="220px" class="ai" src="./images/Oval.svg" alt="oval">
+            </span>
         </div>
      </section>
-     <button class="btn btn-info absolute bottom-5 right-5"  id="modeChanger">Hard</button>
-     <button class="btn absolute right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400" onclick="my_modal_3.showModal()">RULES</button>
-<dialog id="my_modal_3" class="modal">
-  <div class="modal-box">
+     <!-- BUTTONS  -->
+     <div>
+    <button class="btn bg-blue-950 border-white rounded-[10px] w-[100px] h-[40px] hover:bg-white hover:text-gray-400 tracking-widest absolute bottom-20 right-5"  id="modeChanger">Hard</button>
+    <button class="btn absolute bottom-5 right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400" onclick="my_modal_3.showModal()">RULES</button>
+    </div>
+    <dialog id="my_modal_3" class="modal">
+    <div class="modal-box w-[400px] h-[400px] flex justify-center align-middle flex-col place-items-center">
     <form method="dialog">
       <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
     </form>
-    <h3 class="text-lg font-bold">RULES</h3>
-    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+    <h3 class="font-bold text-2xl absolute left-5 top-5 text-gray-500">RULES</h3>
+    <img id="rules" src="./images/rule-basic.svg" alt="rule-basic">
   </div>
-</dialog>
+    </dialog>
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
