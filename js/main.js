@@ -19,9 +19,9 @@ elHands.forEach((el) => {
             console.log(ai);
             elAi.src = `images/${ai}.svg`;
             if(winner === "YOU WIN"){
+                elPlayer.classList.add("shadow-[0_0_0_20px_rgba(59,130,246,0.2),0_0_0_40px_rgba(59,130,246,0.15),0_0_0_60px_rgba(59,130,246,0.1)]","rounded-full") 
                 sum++
                 elCountText.textContent = sum;
-                 
             } else if(winner === "YOU LOSE" && sum > 0){
                 sum--
                 elCountText.textContent = sum
