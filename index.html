@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-[radial-gradient(134.34%_134.34%_at_50%_0%,_#1F3757_0%,_#131537_100%)] h-full">
+    <!-- Count Zone  -->
+     <section class="flex justify-center translate-y-[48px]">
+         <div class="flex justify-between w-[700px] h-[150px] rounded-[15px] border-2 text-gray-500 px-[35px] py-[20px]">
+            <img id="logo" src="./images/tipa-logo.svg" alt="tipa-logo">
+            <div class="flex place-items-center flex-col w-[115px] h-[100px] rounded-[8px] border-2 bg-white pt-[15px]">
+                <h2 class="font-bold text-xl text-blue-800">SCORE</h2>
+                <p id="countText" class="font-bold text-4xl">0</p>
+            </div>
+        </div>
+     </section>
+    <!-- Choose Zone  -->
+     <section class="flex justify-center py-[100px]" id="ChooseZone">
+        <div class="grid grid-cols-2 grid-rows-2 w-full max-w-[400px] gap-x-20 gap-y-6 bg-no-repeat bg-center bg-[url('../images/triangle.svg')]" id="zoneGrid">
+            <button class="place-items-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"><img width="150px" height="150px" class="hand" src="./images/paper.svg" alt="paper"></button>
+            <button class="place-items-center"><img width="150px" height="150px" class="hand" src="./images/scissors.svg" alt="scissors"></button>
+            <button class="col-start-1 col-end-3 place-items-center"><img width="150px" height="150px" class="hand" src="./images/rock.svg" alt="rock"></button>
+            <button><img width="150px" height="150px" class="hand mode-hard hidden" src="./images/lizard.svg" alt="lizard"></button>
+            <button><img width="150px" height="150px" class="hand mode-hard hidden" src="./images/spock.svg" alt="spock"></button>
+        </div>
+     </section>
+     <!-- Status Zone  -->
+     <section id="StatusZone" class="hidden py-[100px]">
+        <div class="flex">
+            <!-- Player -->
+            <img class="player" src="" alt="">
+            <button id="refreshGameButton" class="btn btn-info">Refresh Game</button>
+            <p class="" id="statusText"></p>
+            <!-- Ai -->
+            <img class="ai" src="./images/Oval.svg" alt="oval">
+        </div>
+     </section>
+     <button class="btn btn-info absolute bottom-5 right-5"  id="modeChanger">Hard</button>
+     <button class="btn absolute right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400" onclick="my_modal_3.showModal()">RULES</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">RULES</h3>
+    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+  </div>
+</dialog>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
