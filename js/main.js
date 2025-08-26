@@ -23,6 +23,7 @@ elHands.forEach((el) => {
                 sum++
                 elCountText.textContent = sum;
             } else if(winner === "YOU LOSE" && sum > 0){
+                elAi.classList.add("shadow-[0_0_0_20px_rgba(59,130,246,0.2),0_0_0_40px_rgba(59,130,246,0.15),0_0_0_60px_rgba(59,130,246,0.1)]","rounded-full") 
                 sum--
                 elCountText.textContent = sum
             }
@@ -33,6 +34,8 @@ elHands.forEach((el) => {
 })
 
 elRefreshGameButton.addEventListener("click", () => {
+    elPlayer.classList.remove("shadow-[0_0_0_20px_rgba(59,130,246,0.2),0_0_0_40px_rgba(59,130,246,0.15),0_0_0_60px_rgba(59,130,246,0.1)]","rounded-full") 
+    elAi.classList.remove("shadow-[0_0_0_20px_rgba(59,130,246,0.2),0_0_0_40px_rgba(59,130,246,0.15),0_0_0_60px_rgba(59,130,246,0.1)]","rounded-full")
     switchZone(false);
     elAi.src = `images/Oval.svg`;
     elRefreshGameButton.classList.add("hidden")
