@@ -52,17 +52,17 @@ export function modeChanger(value){
             if(value === "hard"){
                 elRules.src = `images/rule-advanced.svg`
                 elChooseZone.classList.remove("py-[100px]")
-                elChooseZone.classList.add("py-[35px]")
+                elChooseZone.classList.add("py-[30px]")
                 elCountZone.classList.remove("translate-y-[48px]")
-                elCountZone.classList.add("translate-y-[25px]")
+                elCountZone.classList.add("translate-y-[20px]")
                 elLogo.src = 'images/hard.svg'
                 elZoneGrid.classList.remove("grid-cols-2", "grid-rows-2","gap-x-20","gap-y-6","max-w-[400px]","bg-[url('../images/triangle.svg')]")
                 elZoneGrid.classList.add("grid-cols-2", "grid-rows-3", "gap-x-14", "gap-y-5","max-w-[540px]","bg-[url('../images/polygon.svg')]")
             }else{
                 elRules.src = `images/rule-basic.svg`
-                elChooseZone.classList.remove("py-[35px]")
+                elChooseZone.classList.remove("py-[30px]")
                 elChooseZone.classList.add("py-[100px]")
-                elCountZone.classList.remove("translate-y-[25px]")
+                elCountZone.classList.remove("translate-y-[20px]")
                 elCountZone.classList.add("translate-y-[48px]")
                 elLogo.src = 'images/tipa-logo.svg'
                 elZoneGrid.classList.remove("grid-cols-2", "grid-rows-3","gap-x-14", "gap-y-5","max-w-[540px]","bg-[url('../images/polygon.svg')]")

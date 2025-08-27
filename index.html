@@ -8,55 +8,55 @@
 </head>
 <body class="bg-[radial-gradient(134.34%_134.34%_at_50%_0%,_#1F3757_0%,_#131537_100%)] h-full">
     <!-- Count Zone  -->
-     <section class="flex justify-center translate-y-[48px]" id="countZone">
-         <div class="flex justify-between w-[700px] h-[150px] rounded-[15px] border-2 text-gray-500 px-[35px] py-[20px]">
-            <img id="logo" src="./images/tipa-logo.svg" alt="tipa-logo">
-            <div class="flex place-items-center flex-col w-[115px] h-[100px] rounded-[8px] border-2 bg-white pt-[15px]">
-                <h2 class="font-bold text-xl text-blue-800">SCORE</h2>
-                <p id="countText" class="font-bold text-4xl">0</p>
+     <section class="flex justify-center translate-y-[48px] mr-auto ml-auto pr-4 pl-4" id="countZone">
+         <div class="flex justify-between w-[700px] h-[150px] rounded-[15px] border-2 text-gray-500 px-[35px] py-[20px] max-md:w-[600px] max-md:h-[140px] max-sm:w-[500px] max-sm:h-[120px]">
+            <img class="max-md:w-[120px] max-md:h-[100px] max-sm:w-[120px] max-sm:h-[70px]" id="logo" src="./images/tipa-logo.svg" alt="tipa-logo">
+            <div class="flex place-items-center flex-col w-[115px] h-[100px] rounded-[8px] border-2 bg-white pt-[15px] max-sm:w-[90px] max-sm:h-[75px]">
+                <h2 class="font-bold text-xl text-blue-800 max-sm:text-[15px]">SCORE</h2>
+                <p id="countText" class="font-bold text-4xl max-sm:text-2xl">0</p>
             </div>
         </div>
      </section>
     <!-- Choose Zone  -->
-     <section class="flex justify-center py-[100px]" id="ChooseZone">
-        <div class="grid grid-cols-2 grid-rows-2 w-full max-w-[400px] gap-x-20 gap-y-6 bg-no-repeat bg-center bg-[url('../images/triangle.svg')]" id="zoneGrid">
-            <button class="cursor-pointer place-items-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"><img width="150px" height="150px" class="hand w-40 h-40 rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/paper.svg" alt="paper"></button>
-            <button class="cursor-pointer place-items-center"><img width="150px" height="150px" class="hand w-40 h-40  rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/scissors.svg" alt="scissors"></button>
-            <button class="cursor-pointer col-start-1 col-end-3 place-items-center"><img width="150px" height="150px" class="hand w-40 h-40 rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/rock.svg" alt="rock"></button>
-            <button class="cursor-pointer"><img width="150px" height="150px" class="hand mode-hard hidden w-40 h-40  rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/lizard.svg" alt="lizard"></button>
-            <button class="cursor-pointer"><img width="150px" height="150px" class="hand mode-hard hidden w-40 h-40  rounded-full bg-blue-500 hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/spock.svg" alt="spock"></button>
+     <section class="flex  justify-center py-[100px] max-sm:py-[150px] mr-auto ml-auto pr-4 pl-4 box-border" id="ChooseZone">
+        <div class="grid grid-cols-2 grid-rows-2 w-full max-w-[400px] gap-x-20 gap-y-6 bg-no-repeat bg-center bg-[url('../images/triangle.svg')] max-sm:w-[340px] max-sm:h-[370px]" id="zoneGrid">
+            <button class="cursor-pointer place-items-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"><img width="150px" height="150px" class="hand w-40 h-40 rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)] max-sm:w-[125px] max-sm:h-[125px] max-sm:" src="./images/paper.svg" alt="paper"></button>
+            <button class="cursor-pointer place-items-center"><img width="150px" height="150px" class="hand max-sm:w-[125px] max-sm:h-[125px] w-40 h-40  rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/scissors.svg" alt="scissors"></button>
+            <button class="cursor-pointer col-start-1 col-end-3 place-items-center"><img width="150px" height="150px" class="hand max-sm:w-[125px] max-sm:h-[125px] w-40 h-40 rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/rock.svg" alt="rock"></button>
+            <button class="cursor-pointer"><img width="150px" height="150px" class="hand mode-hard hidden w-40 h-40  rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)] max-sm:w-[125px] max-sm:h-[125px]" src="./images/lizard.svg" alt="lizard"></button>
+            <button class="cursor-pointer"><img width="150px" height="150px" class="hand mode-hard hidden w-40 h-40  rounded-full  hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)] max-sm:w-[125px] max-sm:h-[125px]" src="./images/spock.svg" alt="spock"></button>
         </div>
      </section>
      <!-- Status Zone  -->
      <section id="StatusZone" class="hidden py-[100px]">
-        <div class="flex justify-center py-[50px] gap-10 place-items-center">
+        <div class="flex justify-center py-[20px] gap-10 place-items-center max-sm:gap-25">
             <!-- Player -->
-            <span class="flex gap-10 flex-col">
-                <p class="translate-x-[30px] text-2xl font-semibold tracking-widest">YOU PICKED</p>
-                <img width="220px" height="220px" class="player" src="" alt="">
+            <span class="flex gap-10 flex-col max-sm:flex-col-reverse max-sm:justify-between">
+                <p class="translate-x-[30px] text-2xl font-semibold tracking-widest max-sm:text-[15px]">YOU PICKED</p>
+                <img width="150px" height="150px" class="player" src="" alt="">
             </span>
-            <div class="flex flex-col place-items-center gap-4">
+            <div class="flex flex-col place-items-center max-sm:align-bottom max-sm:absolute max-sm:top-150 gap-4">
             <p class="text-4xl font-bold hidden" id="statusText"></p>
             <button id="refreshGameButton" class="btn btn-info text-gray-500 bg-white shadow-none border-white w-[200px] rounded-[8px] hidden ">PLAY AGAIN</button>
             </div>
             <!-- Ai -->
-            <span class="flex gap-10 flex-col">
-                <p class="text-2xl font-semibold tracking-widest">THE HOUSE PICKED</p>
-                <img width="220px" height="220px" class="ai" src="./images/Oval.svg" alt="oval">
+            <span class="flex gap-10 flex-col max-sm:flex-col-reverse">
+                <p class="text-2xl font-semibold tracking-widest max-sm:text-[15px]">THE HOUSE PICKED</p>
+                <img width="150px" height="150px" class="ai" src="./images/Oval.svg" alt="oval">
             </span>
         </div>
      </section>
      <!-- BUTTONS  -->
      <div>
-    <button class="btn bg-blue-950 border-white rounded-[10px] w-[100px] h-[40px] hover:bg-white hover:text-gray-400 tracking-widest absolute bottom-20 right-5"  id="modeChanger">Hard</button>
-    <button class="btn absolute bottom-5 right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400" onclick="my_modal_3.showModal()">RULES</button>
+    <button class="btn bg-blue-950 border-white rounded-[10px] w-[100px] h-[40px] hover:bg-white hover:text-gray-400 tracking-widest absolute bottom-20 right-5 max-sm:right-[35%]"  id="modeChanger">Hard</button>
+    <button class="btn absolute bottom-5 right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400 max-sm:right-[32%]" onclick="my_modal_3.showModal()">RULES</button>
     </div>
     <dialog id="my_modal_3" class="modal">
-    <div class="modal-box w-[400px] h-[400px] flex justify-center align-middle flex-col place-items-center">
+    <div class="modal-box w-[400px] h-[400px] flex justify-center align-middle flex-col place-items-center max-sm:w-full max-sm:h-full max-sm:bg-white">
     <form method="dialog">
-      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 max-sm:bottom-5 max-sm:align-bottom max-sm:text-gray-500 max-sm:top-180 max-sm:right-[45%]">✕</button>
     </form>
-    <h3 class="font-bold text-2xl absolute left-5 top-5 text-gray-500">RULES</h3>
+    <h3 class="font-bold text-2xl absolute left-5 top-5 text-gray-500 max-sm:top-30 max-sm:left-[42%]">RULES</h3>
     <img id="rules" src="./images/rule-basic.svg" alt="rule-basic">
   </div>
     </dialog>
