@@ -18,7 +18,7 @@
         </div>
      </section>
     <!-- Choose Zone  -->
-     <section class="flex  justify-center py-[100px] max-sm:py-[150px] mr-auto ml-auto pr-4 pl-4 box-border" id="ChooseZone">
+     <section class="flex  justify-center py-[100px] max-sm:py-[120px] mr-auto ml-auto pr-4 pl-4 box-border" id="ChooseZone">
         <div class="grid grid-cols-2 grid-rows-2 w-full max-w-[400px] gap-x-20 gap-y-6 bg-no-repeat bg-center bg-[url('../images/triangle.svg')] max-sm:w-[340px] max-sm:h-[370px]" id="zoneGrid">
             <button class="cursor-pointer place-items-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"><img width="150px" height="150px" class="hand w-40 h-40 rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)] max-sm:w-[125px] max-sm:h-[125px] max-sm:" src="./images/paper.svg" alt="paper"></button>
             <button class="cursor-pointer place-items-center"><img width="150px" height="150px" class="hand max-sm:w-[125px] max-sm:h-[125px] w-40 h-40  rounded-full hover:shadow-[0_0_0_20px_rgba(59,130,246,0.2)]" src="./images/scissors.svg" alt="scissors"></button>
@@ -32,7 +32,7 @@
         <div class="flex justify-center py-[20px] gap-10 place-items-center max-sm:gap-25">
             <!-- Player -->
             <span class="flex gap-10 flex-col max-sm:flex-col-reverse max-sm:justify-between">
-                <p class="translate-x-[30px] text-2xl font-semibold tracking-widest max-sm:text-[15px]">YOU PICKED</p>
+                <p class="translate-x-[35px] text-2xl font-semibold tracking-widest max-sm:text-[15px] max-sm:translate-x-[20px]">YOU PICKED</p>
                 <img width="150px" height="150px" class="player" src="" alt="">
             </span>
             <div class="flex flex-col place-items-center max-sm:align-bottom max-sm:absolute max-sm:top-150 gap-4">
@@ -47,18 +47,20 @@
         </div>
      </section>
      <!-- BUTTONS  -->
-     <div>
-    <button class="btn bg-blue-950 border-white rounded-[10px] w-[100px] h-[40px] hover:bg-white hover:text-gray-400 tracking-widest absolute bottom-20 right-5 max-sm:right-[35%]"  id="modeChanger">Hard</button>
-    <button class="btn absolute bottom-5 right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400 max-sm:right-[32%]" onclick="my_modal_3.showModal()">RULES</button>
-    </div>
-    <dialog id="my_modal_3" class="modal">
-    <div class="modal-box w-[400px] h-[400px] flex justify-center align-middle flex-col place-items-center max-sm:w-full max-sm:h-full max-sm:bg-white">
-    <form method="dialog">
-    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 max-sm:bottom-5 max-sm:align-bottom max-sm:text-gray-500 max-sm:top-180 max-sm:right-[45%]">✕</button>
-    </form>
-    <h3 class="font-bold text-2xl absolute left-5 top-5 text-gray-500 max-sm:top-30 max-sm:left-[42%]">RULES</h3>
-    <img id="rules" src="./images/rule-basic.svg" alt="rule-basic">
-  </div>
+     <div id="buttons" >
+        <div>
+            <button class="btn bg-blue-950 text-white border-white rounded-[10px] w-[100px] h-[40px] hover:bg-white hover:text-gray-400 tracking-widest absolute bottom-20 right-5 max-sm:right-45"  id="modeChanger">Hard</button>
+            <button class="btn absolute bottom-5 right-5 bg-blue-950 border-white w-[128px] h-[50px] rounded-[10px] tracking-widest hover:bg-white hover:text-gray-400 text-white max-sm:right-41" onclick="my_modal_3.showModal()">RULES</button>
+            </div>
+            <dialog id="my_modal_3" class="modal">
+            <div class="modal-box w-[400px] h-[400px] flex justify-center align-middle flex-col place-items-center max-sm:w-full max-sm:h-full max-sm:bg-white">
+            <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 max-sm:bottom-5 max-sm:align-bottom max-sm:text-gray-500 max-sm:top-180 max-sm:right-[45%]">✕</button>
+            </form>
+            <h3 class="font-bold text-2xl absolute left-5 top-5 text-gray-500 max-sm:top-30 max-sm:left-[42%]">RULES</h3>
+            <img id="rules" src="./images/rule-basic.svg" alt="rule-basic">
+          </div>
+     </div>
     </dialog>
     <script type="module" src="./js/main.js"></script>
 </body>

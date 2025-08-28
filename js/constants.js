@@ -1,4 +1,4 @@
-import { elChooseZone, elCountZone, elHands, elHandsHard, elLogo, elRules, elZoneGrid } from "./html.selection.js";
+import { elButtons, elChooseZone, elCountZone, elHands, elHandsHard, elLogo, elRules, elZoneGrid } from "./html.selection.js";
 
 export const {rock, scissors, paper, lizard, spock} = {
     rock:"rock",
@@ -50,9 +50,16 @@ export function modeChanger(value){
     })
 
             if(value === "hard"){
+                elButtons.classList.remove("max-sm:right-52")
+                elButtons.classList.add("max-sm:right-48")
+                elZoneGrid.classList.remove("max-sm:w-[340px]")
+                elZoneGrid.classList.remove("max-sm:h-[370px]")
+                elZoneGrid.classList.add("max-sm:h-[420px]")
+                elZoneGrid.classList.add("max-sm:w-[410px]")
                 elRules.src = `images/rule-advanced.svg`
                 elChooseZone.classList.remove("py-[100px]")
                 elChooseZone.classList.add("py-[30px]")
+                elChooseZone.classList.add("max-sm:py-[10px]")
                 elCountZone.classList.remove("translate-y-[48px]")
                 elCountZone.classList.add("translate-y-[20px]")
                 elLogo.src = 'images/hard.svg'
